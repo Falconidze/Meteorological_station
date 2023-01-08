@@ -1,5 +1,7 @@
 #include <stdint.h>
 #include "status.h"
+#include "../Timer/timer.h"
+#include "tim.h"
 
 static uint16_t status;
 
@@ -9,7 +11,7 @@ void status_init()
 }
 
 void status_set(uint16_t data)
-{
+{	
 	status = data;	
 }
 

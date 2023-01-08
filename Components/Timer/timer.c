@@ -1,8 +1,10 @@
 #include "timer.h"
 #include "tim.h"
+#include "../Status/status.h"
 #include <stdbool.h>
 
 #define timer htim6
+
 
 void timer_delay_us(uint16_t time)
 {
@@ -16,3 +18,4 @@ void timer_delay_us(uint16_t time)
   The timer not defined!
 #endif /* timer */
 }
+

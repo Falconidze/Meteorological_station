@@ -18,7 +18,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "rtc.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -91,10 +90,10 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_RTC_Init();
   MX_UART4_Init();
   MX_TIM6_Init();
   MX_TIM1_Init();
+  MX_TIM10_Init();
   /* USER CODE BEGIN 2 */
 	
   /* USER CODE END 2 */
@@ -104,19 +103,11 @@ int main(void)
 	lcd_init();
 	mode_init();
 	status_init();
+	HAL_TIM_Base_Start_IT(&htim10);
+	Timer10_Stop;
 	HAL_GPIO_WritePin(Debug_LED_GPIO_Port, Debug_LED_Pin, GPIO_PIN_RESET);
   while (1)
   {
-		/*if (status_get() == Status_Key_Up)
-		{
-		lcd_clear();
-		lcd_set_cursor(0, 0);
-		lcd_write_string((uint8_t *)"Check line", 10);
-		HAL_GPIO_WritePin(Debug_LED_GPIO_Port, Debug_LED_Pin, GPIO_PIN_SET);
-		timer_delay_us(10000);
-		HAL_GPIO_WritePin(Debug_LED_GPIO_Port, Debug_LED_Pin, GPIO_PIN_RESET);
-		status_set(0x00);
-		}*/
 			if (mode_get() == Mode_Choice)
 				{
 					mode_choice_run();
@@ -125,6 +116,19 @@ int main(void)
 				{
 					mode_help_run();
 				}
+			else if (mode_get() == Mode_Settings)
+				{
+					mode_settings_run();
+				}
+			else if (mode_get() == Mode_Current_Data)
+				{
+					mode_current_data_run();
+				}
+			else if (mode_get() == Mode_Saved_Data)
+				{
+					mode_saved_data_run();
+				}
+				
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -149,10 +153,9 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
@@ -175,6 +178,15 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
+{
+	if (htim == &htim10)
+	{
+		Timer10_Stop;
+		Timer10_Reset;
+		status_set(0x0000);		
+	}
+}
 
 /* USER CODE END 4 */
 

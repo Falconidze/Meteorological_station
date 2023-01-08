@@ -6,15 +6,18 @@
 
 #define Mode_Settings 0x80
 #define Mode_Help 0x40
-#define Mode_Current_Data 0x20
-#define Mode_Saved_Data 0x10
-#define Mode_Reset 0x08
-#define Mode_Choice 0x04
+#define Mode_Saved_Data 0x20
+#define Mode_Current_Data 0x10
+#define Mode_Reset 0x01
+#define Mode_Choice 0x08
 
 
 void mode_settings_run();
 void mode_choice_run();
 void mode_help_run();
+void mode_current_data_run();
+void mode_saved_data_run();
+void mode_reset_run();
 void mode_init();
 void mode_set(uint8_t data);
 uint8_t mode_get();

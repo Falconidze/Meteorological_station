@@ -6,6 +6,7 @@ static void lcd_clock(void);
 static void lcd_write_data(uint8_t data);
 static void lcd_write_command(uint8_t data);
 static void lcd_write_port(uint8_t data);
+void lcd_create_symbol(uint8_t byte, uint8_t data);
 
 void lcd_init(void)
 {
@@ -131,4 +132,18 @@ void lcd_clear(void)
   lcd_write_port(0x10);
   lcd_clock();
 	timer_delay_us(2000);
+}
+
+void lcd_create_symbol(uint8_t byte, uint8_t data)
+{
+	lcd_write_command(0x40);
+	timer_delay_us(40);
+	lcd_write_data(0x0C);
+	lcd_write_data(0x12);
+	lcd_write_data(0x12);
+	lcd_write_data(0x0C);
+	lcd_write_data(0x00);
+	lcd_write_data(0x00);
+	lcd_write_data(0x00);
+	lcd_write_data(0x00);
 }
