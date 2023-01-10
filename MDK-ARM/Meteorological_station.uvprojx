@@ -660,6 +660,16 @@
               <FileType>5</FileType>
               <FilePath>..\Components\Modes\modes.h</FilePath>
             </File>
+            <File>
+              <FileName>mode_help.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Components\Modes\mode_help.c</FilePath>
+            </File>
+            <File>
+              <FileName>mode_help.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Components\Modes\mode_help.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

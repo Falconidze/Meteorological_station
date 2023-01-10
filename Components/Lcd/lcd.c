@@ -31,7 +31,7 @@ void lcd_init(void)
   lcd_write_port(0x00);
   lcd_clock();
   /* Display on (6-bit), Cursor on (5-bit) and Blink on (4-bit)*/
-  lcd_write_port(0xF0);
+  lcd_write_port(0xC0);
   lcd_clock();  
   timer_delay_us(40);
 

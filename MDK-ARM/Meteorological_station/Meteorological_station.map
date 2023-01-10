@@ -966,22 +966,17 @@ Section Cross References
     modes.o(.ARM.exidx.text.mode_choice_run) refers to modes.o(.text.mode_choice_run) for [Anonymous Symbol]
     modes.o(.text.mode_help_run) refers to ui.o(.text.ui_set_page) for ui_set_page
     modes.o(.text.mode_help_run) refers to ui.o(.text.ui_set_cursor) for ui_set_cursor
-    modes.o(.text.mode_help_run) refers to lcd.o(.text.lcd_clear) for lcd_clear
-    modes.o(.text.mode_help_run) refers to lcd.o(.text.lcd_set_cursor) for lcd_set_cursor
-    modes.o(.text.mode_help_run) refers to ui.o(.text.ui_get_cursor) for ui_get_cursor
-    modes.o(.text.mode_help_run) refers to lcd.o(.text.lcd_write_string) for lcd_write_string
-    modes.o(.text.mode_help_run) refers to modes.o(.rodata.str1.1) for .L.str.5
-    modes.o(.text.mode_help_run) refers to stm32f4xx_hal_gpio.o(.text.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
-    modes.o(.text.mode_help_run) refers to status.o(.text.status_get) for status_get
     modes.o(.text.mode_help_run) refers to ui.o(.text.ui_get_page) for ui_get_page
+    modes.o(.text.mode_help_run) refers to mode_help.o(.text.mode_help_draw) for mode_help_draw
+    modes.o(.text.mode_help_run) refers to status.o(.text.status_get) for status_get
+    modes.o(.text.mode_help_run) refers to ui.o(.text.ui_get_cursor) for ui_get_cursor
     modes.o(.text.mode_help_run) refers to modes.o(.text.mode_set) for mode_set
-    modes.o(.text.mode_help_run) refers to status.o(.text.status_set) for status_set
     modes.o(.ARM.exidx.text.mode_help_run) refers to modes.o(.text.mode_help_run) for [Anonymous Symbol]
     modes.o(.text.mode_settings_run) refers to ui.o(.text.ui_set_page) for ui_set_page
     modes.o(.text.mode_settings_run) refers to ui.o(.text.ui_set_cursor) for ui_set_cursor
     modes.o(.text.mode_settings_run) refers to lcd.o(.text.lcd_clear) for lcd_clear
     modes.o(.text.mode_settings_run) refers to lcd.o(.text.lcd_set_cursor) for lcd_set_cursor
-    modes.o(.text.mode_settings_run) refers to modes.o(.rodata.str1.1) for .L.str.7
+    modes.o(.text.mode_settings_run) refers to modes.o(.rodata.str1.1) for .L.str.5
     modes.o(.text.mode_settings_run) refers to lcd.o(.text.lcd_write_string) for lcd_write_string
     modes.o(.text.mode_settings_run) refers to stm32f4xx_hal_gpio.o(.text.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
     modes.o(.text.mode_settings_run) refers to status.o(.text.status_get) for status_get
@@ -990,7 +985,7 @@ Section Cross References
     modes.o(.ARM.exidx.text.mode_settings_run) refers to modes.o(.text.mode_settings_run) for [Anonymous Symbol]
     modes.o(.text.mode_current_data_run) refers to lcd.o(.text.lcd_clear) for lcd_clear
     modes.o(.text.mode_current_data_run) refers to lcd.o(.text.lcd_set_cursor) for lcd_set_cursor
-    modes.o(.text.mode_current_data_run) refers to modes.o(.rodata.str1.1) for .L.str.8
+    modes.o(.text.mode_current_data_run) refers to modes.o(.rodata.str1.1) for .L.str.6
     modes.o(.text.mode_current_data_run) refers to lcd.o(.text.lcd_write_string) for lcd_write_string
     modes.o(.text.mode_current_data_run) refers to stm32f4xx_hal_gpio.o(.text.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
     modes.o(.text.mode_current_data_run) refers to status.o(.text.status_get) for status_get
@@ -999,13 +994,22 @@ Section Cross References
     modes.o(.ARM.exidx.text.mode_current_data_run) refers to modes.o(.text.mode_current_data_run) for [Anonymous Symbol]
     modes.o(.text.mode_saved_data_run) refers to lcd.o(.text.lcd_clear) for lcd_clear
     modes.o(.text.mode_saved_data_run) refers to lcd.o(.text.lcd_set_cursor) for lcd_set_cursor
-    modes.o(.text.mode_saved_data_run) refers to modes.o(.rodata.str1.1) for .L.str.10
+    modes.o(.text.mode_saved_data_run) refers to modes.o(.rodata.str1.1) for .L.str.8
     modes.o(.text.mode_saved_data_run) refers to lcd.o(.text.lcd_write_string) for lcd_write_string
     modes.o(.text.mode_saved_data_run) refers to stm32f4xx_hal_gpio.o(.text.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
     modes.o(.text.mode_saved_data_run) refers to status.o(.text.status_get) for status_get
     modes.o(.text.mode_saved_data_run) refers to modes.o(.text.mode_set) for mode_set
     modes.o(.text.mode_saved_data_run) refers to status.o(.text.status_set) for status_set
     modes.o(.ARM.exidx.text.mode_saved_data_run) refers to modes.o(.text.mode_saved_data_run) for [Anonymous Symbol]
+    mode_help.o(.text.mode_help_draw) refers to ui.o(.text.ui_get_page) for ui_get_page
+    mode_help.o(.text.mode_help_draw) refers to lcd.o(.text.lcd_clear) for lcd_clear
+    mode_help.o(.text.mode_help_draw) refers to ui.o(.text.ui_get_cursor) for ui_get_cursor
+    mode_help.o(.text.mode_help_draw) refers to lcd.o(.text.lcd_set_cursor) for lcd_set_cursor
+    mode_help.o(.text.mode_help_draw) refers to lcd.o(.text.lcd_write_string) for lcd_write_string
+    mode_help.o(.text.mode_help_draw) refers to mode_help.o(.rodata.str1.1) for .L.str
+    mode_help.o(.text.mode_help_draw) refers to ui.o(.text.ui_set_page) for ui_set_page
+    mode_help.o(.text.mode_help_draw) refers to ui.o(.text.ui_set_cursor) for ui_set_cursor
+    mode_help.o(.ARM.exidx.text.mode_help_draw) refers to mode_help.o(.text.mode_help_draw) for [Anonymous Symbol]
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
@@ -1859,8 +1863,10 @@ Removing Unused input sections from the image.
     Removing modes.o(.ARM.exidx.text.mode_settings_run), (8 bytes).
     Removing modes.o(.ARM.exidx.text.mode_current_data_run), (8 bytes).
     Removing modes.o(.ARM.exidx.text.mode_saved_data_run), (8 bytes).
+    Removing mode_help.o(.text), (0 bytes).
+    Removing mode_help.o(.ARM.exidx.text.mode_help_draw), (8 bytes).
 
-830 unused section(s) (total 65958 bytes) removed from the image.
+832 unused section(s) (total 65966 bytes) removed from the image.
 
 ==============================================================================
 
@@ -1894,6 +1900,7 @@ Image Symbol Table
     keys.c                                   0x00000000   Number         0  keys.o ABSOLUTE
     lcd.c                                    0x00000000   Number         0  lcd.o ABSOLUTE
     main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    mode_help.c                              0x00000000   Number         0  mode_help.o ABSOLUTE
     modes.c                                  0x00000000   Number         0  modes.o ABSOLUTE
     startup_stm32f407xx.s                    0x00000000   Number         0  startup_stm32f407xx.o ABSOLUTE
     status.c                                 0x00000000   Number         0  status.o ABSOLUTE
@@ -2047,34 +2054,38 @@ Image Symbol Table
     [Anonymous Symbol]                       0x08003558   Section        0  modes.o(.text.mode_choice_run)
     [Anonymous Symbol]                       0x08003740   Section        0  modes.o(.text.mode_current_data_run)
     [Anonymous Symbol]                       0x080037b0   Section        0  modes.o(.text.mode_get)
-    [Anonymous Symbol]                       0x080037bc   Section        0  modes.o(.text.mode_help_run)
-    [Anonymous Symbol]                       0x080039dc   Section        0  modes.o(.text.mode_init)
-    [Anonymous Symbol]                       0x080039ec   Section        0  modes.o(.text.mode_saved_data_run)
-    [Anonymous Symbol]                       0x08003a38   Section        0  modes.o(.text.mode_set)
-    [Anonymous Symbol]                       0x08003a50   Section        0  modes.o(.text.mode_settings_run)
-    [Anonymous Symbol]                       0x08003ab0   Section        0  status.o(.text.status_get)
-    [Anonymous Symbol]                       0x08003abc   Section        0  status.o(.text.status_init)
-    [Anonymous Symbol]                       0x08003acc   Section        0  status.o(.text.status_set)
-    [Anonymous Symbol]                       0x08003ae4   Section        0  timer.o(.text.timer_delay_us)
-    [Anonymous Symbol]                       0x08003b40   Section        0  ui.o(.text.ui_get_cursor)
-    [Anonymous Symbol]                       0x08003b5c   Section        0  ui.o(.text.ui_get_page)
-    [Anonymous Symbol]                       0x08003b68   Section        0  ui.o(.text.ui_set_cursor)
-    [Anonymous Symbol]                       0x08003b8c   Section        0  ui.o(.text.ui_set_page)
-    i.__scatterload_copy                     0x08003ba4   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x08003bb2   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x08003bb4   Section       14  handlers.o(i.__scatterload_zeroinit)
-    .L.str.6                                 0x08003bda   Data          16  modes.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08003bda   Section        0  modes.o(.rodata.str1.1)
-    .L.str.8                                 0x08003bea   Data           3  modes.o(.rodata.str1.1)
-    .L.str                                   0x08003bed   Data          13  modes.o(.rodata.str1.1)
-    .L.str.5                                 0x08003bfa   Data          13  modes.o(.rodata.str1.1)
-    .L.str.2                                 0x08003c07   Data          11  modes.o(.rodata.str1.1)
-    .L.str.1                                 0x08003c12   Data          13  modes.o(.rodata.str1.1)
-    .L.str.9                                 0x08003c1f   Data           8  modes.o(.rodata.str1.1)
-    .L.str.3                                 0x08003c27   Data           5  modes.o(.rodata.str1.1)
-    .L.str.10                                0x08003c2c   Data          15  modes.o(.rodata.str1.1)
-    .L.str.4                                 0x08003c3b   Data           9  modes.o(.rodata.str1.1)
-    .L.str.7                                 0x08003c44   Data          14  modes.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x080037bc   Section        0  mode_help.o(.text.mode_help_draw)
+    [Anonymous Symbol]                       0x080039f4   Section        0  modes.o(.text.mode_help_run)
+    [Anonymous Symbol]                       0x08003adc   Section        0  modes.o(.text.mode_init)
+    [Anonymous Symbol]                       0x08003aec   Section        0  modes.o(.text.mode_saved_data_run)
+    [Anonymous Symbol]                       0x08003b38   Section        0  modes.o(.text.mode_set)
+    [Anonymous Symbol]                       0x08003b50   Section        0  modes.o(.text.mode_settings_run)
+    [Anonymous Symbol]                       0x08003bb0   Section        0  status.o(.text.status_get)
+    [Anonymous Symbol]                       0x08003bbc   Section        0  status.o(.text.status_init)
+    [Anonymous Symbol]                       0x08003bcc   Section        0  status.o(.text.status_set)
+    [Anonymous Symbol]                       0x08003be4   Section        0  timer.o(.text.timer_delay_us)
+    [Anonymous Symbol]                       0x08003c40   Section        0  ui.o(.text.ui_get_cursor)
+    [Anonymous Symbol]                       0x08003c5c   Section        0  ui.o(.text.ui_get_page)
+    [Anonymous Symbol]                       0x08003c68   Section        0  ui.o(.text.ui_set_cursor)
+    [Anonymous Symbol]                       0x08003c8c   Section        0  ui.o(.text.ui_set_page)
+    i.__scatterload_copy                     0x08003ca4   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08003cb2   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08003cb4   Section       14  handlers.o(i.__scatterload_zeroinit)
+    .L.str.6                                 0x08003cda   Data           3  modes.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08003cda   Section        0  modes.o(.rodata.str1.1)
+    .L.str                                   0x08003cdd   Data          13  modes.o(.rodata.str1.1)
+    .L.str.2                                 0x08003cea   Data          11  modes.o(.rodata.str1.1)
+    .L.str.1                                 0x08003cf5   Data          13  modes.o(.rodata.str1.1)
+    .L.str.7                                 0x08003d02   Data           8  modes.o(.rodata.str1.1)
+    .L.str.3                                 0x08003d0a   Data           5  modes.o(.rodata.str1.1)
+    .L.str.8                                 0x08003d0f   Data          15  modes.o(.rodata.str1.1)
+    .L.str.4                                 0x08003d1e   Data           9  modes.o(.rodata.str1.1)
+    .L.str.5                                 0x08003d27   Data          14  modes.o(.rodata.str1.1)
+    .L.str.1                                 0x08003d35   Data          16  mode_help.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08003d35   Section        0  mode_help.o(.rodata.str1.1)
+    .L.str.2                                 0x08003d45   Data          16  mode_help.o(.rodata.str1.1)
+    .L.str                                   0x08003d55   Data          13  mode_help.o(.rodata.str1.1)
+    .L.str.3                                 0x08003d62   Data          13  mode_help.o(.rodata.str1.1)
     mode                                     0x2000012c   Data           1  modes.o(.bss.mode)
     [Anonymous Symbol]                       0x2000012c   Section        0  modes.o(.bss.mode)
     status                                   0x2000012e   Data           2  status.o(.bss.status)
@@ -2273,26 +2284,27 @@ Image Symbol Table
     mode_choice_run                          0x08003559   Thumb Code   488  modes.o(.text.mode_choice_run)
     mode_current_data_run                    0x08003741   Thumb Code   112  modes.o(.text.mode_current_data_run)
     mode_get                                 0x080037b1   Thumb Code    12  modes.o(.text.mode_get)
-    mode_help_run                            0x080037bd   Thumb Code   542  modes.o(.text.mode_help_run)
-    mode_init                                0x080039dd   Thumb Code    14  modes.o(.text.mode_init)
-    mode_saved_data_run                      0x080039ed   Thumb Code    76  modes.o(.text.mode_saved_data_run)
-    mode_set                                 0x08003a39   Thumb Code    24  modes.o(.text.mode_set)
-    mode_settings_run                        0x08003a51   Thumb Code    96  modes.o(.text.mode_settings_run)
-    status_get                               0x08003ab1   Thumb Code    12  status.o(.text.status_get)
-    status_init                              0x08003abd   Thumb Code    14  status.o(.text.status_init)
-    status_set                               0x08003acd   Thumb Code    24  status.o(.text.status_set)
-    timer_delay_us                           0x08003ae5   Thumb Code    90  timer.o(.text.timer_delay_us)
-    ui_get_cursor                            0x08003b41   Thumb Code    26  ui.o(.text.ui_get_cursor)
-    ui_get_page                              0x08003b5d   Thumb Code    12  ui.o(.text.ui_get_page)
-    ui_set_cursor                            0x08003b69   Thumb Code    34  ui.o(.text.ui_set_cursor)
-    ui_set_page                              0x08003b8d   Thumb Code    24  ui.o(.text.ui_set_page)
-    __scatterload_copy                       0x08003ba5   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x08003bb3   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x08003bb5   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    AHBPrescTable                            0x08003bc2   Data          16  system_stm32f4xx.o(.rodata.AHBPrescTable)
-    APBPrescTable                            0x08003bd2   Data           8  system_stm32f4xx.o(.rodata.APBPrescTable)
-    Region$$Table$$Base                      0x08003c54   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08003c74   Number         0  anon$$obj.o(Region$$Table)
+    mode_help_draw                           0x080037bd   Thumb Code   566  mode_help.o(.text.mode_help_draw)
+    mode_help_run                            0x080039f5   Thumb Code   232  modes.o(.text.mode_help_run)
+    mode_init                                0x08003add   Thumb Code    14  modes.o(.text.mode_init)
+    mode_saved_data_run                      0x08003aed   Thumb Code    76  modes.o(.text.mode_saved_data_run)
+    mode_set                                 0x08003b39   Thumb Code    24  modes.o(.text.mode_set)
+    mode_settings_run                        0x08003b51   Thumb Code    96  modes.o(.text.mode_settings_run)
+    status_get                               0x08003bb1   Thumb Code    12  status.o(.text.status_get)
+    status_init                              0x08003bbd   Thumb Code    14  status.o(.text.status_init)
+    status_set                               0x08003bcd   Thumb Code    24  status.o(.text.status_set)
+    timer_delay_us                           0x08003be5   Thumb Code    90  timer.o(.text.timer_delay_us)
+    ui_get_cursor                            0x08003c41   Thumb Code    26  ui.o(.text.ui_get_cursor)
+    ui_get_page                              0x08003c5d   Thumb Code    12  ui.o(.text.ui_get_page)
+    ui_set_cursor                            0x08003c69   Thumb Code    34  ui.o(.text.ui_set_cursor)
+    ui_set_page                              0x08003c8d   Thumb Code    24  ui.o(.text.ui_set_page)
+    __scatterload_copy                       0x08003ca5   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08003cb3   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08003cb5   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    AHBPrescTable                            0x08003cc2   Data          16  system_stm32f4xx.o(.rodata.AHBPrescTable)
+    APBPrescTable                            0x08003cd2   Data           8  system_stm32f4xx.o(.rodata.APBPrescTable)
+    Region$$Table$$Base                      0x08003d70   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08003d90   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_stm32f4xx.o(.data.SystemCoreClock)
     uwTickFreq                               0x20000004   Data           1  stm32f4xx_hal.o(.data.uwTickFreq)
     uwTickPrio                               0x20000008   Data           4  stm32f4xx_hal.o(.data.uwTickPrio)
@@ -2311,28 +2323,28 @@ Memory Map of the image
 
   Image Entry point : 0x08000189
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003c88, Max: 0x00100000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003da0, Max: 0x00100000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00003c74, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00003d90, Max: 0x00100000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000188   Data   RO            3    RESET               startup_stm32f407xx.o
-    0x08000188   0x08000188   0x00000000   Code   RO         1122  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000188   0x08000188   0x00000004   Code   RO         1129    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x0800018c   0x0800018c   0x00000004   Code   RO         1132    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000190   0x08000190   0x00000000   Code   RO         1134    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000190   0x08000190   0x00000000   Code   RO         1136    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000190   0x08000190   0x00000008   Code   RO         1137    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000198   0x08000198   0x00000000   Code   RO         1139    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x08000198   0x08000198   0x00000000   Code   RO         1141    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x08000198   0x08000198   0x00000004   Code   RO         1130    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000188   0x08000188   0x00000000   Code   RO         1131  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000188   0x08000188   0x00000004   Code   RO         1138    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x0800018c   0x0800018c   0x00000004   Code   RO         1141    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000190   0x08000190   0x00000000   Code   RO         1143    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000190   0x08000190   0x00000000   Code   RO         1145    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000190   0x08000190   0x00000008   Code   RO         1146    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000198   0x08000198   0x00000000   Code   RO         1148    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000198   0x08000198   0x00000000   Code   RO         1150    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000198   0x08000198   0x00000004   Code   RO         1139    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x0800019c   0x0800019c   0x00000024   Code   RO            4    .text               startup_stm32f407xx.o
-    0x080001c0   0x080001c0   0x00000062   Code   RO         1125    .text               mc_w.l(uldiv.o)
-    0x08000222   0x08000222   0x00000024   Code   RO         1127    .text               mc_w.l(memseta.o)
-    0x08000246   0x08000246   0x0000001e   Code   RO         1143    .text               mc_w.l(llshl.o)
-    0x08000264   0x08000264   0x00000020   Code   RO         1145    .text               mc_w.l(llushr.o)
-    0x08000284   0x08000284   0x00000024   Code   RO         1147    .text               mc_w.l(init.o)
+    0x080001c0   0x080001c0   0x00000062   Code   RO         1134    .text               mc_w.l(uldiv.o)
+    0x08000222   0x08000222   0x00000024   Code   RO         1136    .text               mc_w.l(memseta.o)
+    0x08000246   0x08000246   0x0000001e   Code   RO         1152    .text               mc_w.l(llshl.o)
+    0x08000264   0x08000264   0x00000020   Code   RO         1154    .text               mc_w.l(llushr.o)
+    0x08000284   0x08000284   0x00000024   Code   RO         1156    .text               mc_w.l(init.o)
     0x080002a8   0x080002a8   0x00000004   Code   RO           81    .text.BusFault_Handler  stm32f4xx_it.o
     0x080002ac   0x080002ac   0x00000002   Code   RO           87    .text.DebugMon_Handler  stm32f4xx_it.o
     0x080002ae   0x080002ae   0x00000002   PAD
@@ -2465,58 +2477,60 @@ Memory Map of the image
     0x08003558   0x08003558   0x000001e8   Code   RO         1104    .text.mode_choice_run  modes.o
     0x08003740   0x08003740   0x00000070   Code   RO         1110    .text.mode_current_data_run  modes.o
     0x080037b0   0x080037b0   0x0000000c   Code   RO         1102    .text.mode_get      modes.o
-    0x080037bc   0x080037bc   0x0000021e   Code   RO         1106    .text.mode_help_run  modes.o
-    0x080039da   0x080039da   0x00000002   PAD
-    0x080039dc   0x080039dc   0x0000000e   Code   RO         1098    .text.mode_init     modes.o
-    0x080039ea   0x080039ea   0x00000002   PAD
-    0x080039ec   0x080039ec   0x0000004c   Code   RO         1112    .text.mode_saved_data_run  modes.o
-    0x08003a38   0x08003a38   0x00000018   Code   RO         1100    .text.mode_set      modes.o
-    0x08003a50   0x08003a50   0x00000060   Code   RO         1108    .text.mode_settings_run  modes.o
-    0x08003ab0   0x08003ab0   0x0000000c   Code   RO         1062    .text.status_get    status.o
-    0x08003abc   0x08003abc   0x0000000e   Code   RO         1058    .text.status_init   status.o
-    0x08003aca   0x08003aca   0x00000002   PAD
-    0x08003acc   0x08003acc   0x00000018   Code   RO         1060    .text.status_set    status.o
-    0x08003ae4   0x08003ae4   0x0000005a   Code   RO         1050    .text.timer_delay_us  timer.o
-    0x08003b3e   0x08003b3e   0x00000002   PAD
-    0x08003b40   0x08003b40   0x0000001a   Code   RO         1076    .text.ui_get_cursor  ui.o
-    0x08003b5a   0x08003b5a   0x00000002   PAD
-    0x08003b5c   0x08003b5c   0x0000000c   Code   RO         1080    .text.ui_get_page   ui.o
-    0x08003b68   0x08003b68   0x00000022   Code   RO         1074    .text.ui_set_cursor  ui.o
-    0x08003b8a   0x08003b8a   0x00000002   PAD
-    0x08003b8c   0x08003b8c   0x00000018   Code   RO         1078    .text.ui_set_page   ui.o
-    0x08003ba4   0x08003ba4   0x0000000e   Code   RO         1151    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08003bb2   0x08003bb2   0x00000002   Code   RO         1152    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08003bb4   0x08003bb4   0x0000000e   Code   RO         1153    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08003bc2   0x08003bc2   0x00000010   Data   RO         1016    .rodata.AHBPrescTable  system_stm32f4xx.o
-    0x08003bd2   0x08003bd2   0x00000008   Data   RO         1017    .rodata.APBPrescTable  system_stm32f4xx.o
-    0x08003bda   0x08003bda   0x00000078   Data   RO         1115    .rodata.str1.1      modes.o
-    0x08003c52   0x08003c52   0x00000002   PAD
-    0x08003c54   0x08003c54   0x00000020   Data   RO         1150    Region$$Table       anon$$obj.o
+    0x080037bc   0x080037bc   0x00000236   Code   RO         1123    .text.mode_help_draw  mode_help.o
+    0x080039f2   0x080039f2   0x00000002   PAD
+    0x080039f4   0x080039f4   0x000000e8   Code   RO         1106    .text.mode_help_run  modes.o
+    0x08003adc   0x08003adc   0x0000000e   Code   RO         1098    .text.mode_init     modes.o
+    0x08003aea   0x08003aea   0x00000002   PAD
+    0x08003aec   0x08003aec   0x0000004c   Code   RO         1112    .text.mode_saved_data_run  modes.o
+    0x08003b38   0x08003b38   0x00000018   Code   RO         1100    .text.mode_set      modes.o
+    0x08003b50   0x08003b50   0x00000060   Code   RO         1108    .text.mode_settings_run  modes.o
+    0x08003bb0   0x08003bb0   0x0000000c   Code   RO         1062    .text.status_get    status.o
+    0x08003bbc   0x08003bbc   0x0000000e   Code   RO         1058    .text.status_init   status.o
+    0x08003bca   0x08003bca   0x00000002   PAD
+    0x08003bcc   0x08003bcc   0x00000018   Code   RO         1060    .text.status_set    status.o
+    0x08003be4   0x08003be4   0x0000005a   Code   RO         1050    .text.timer_delay_us  timer.o
+    0x08003c3e   0x08003c3e   0x00000002   PAD
+    0x08003c40   0x08003c40   0x0000001a   Code   RO         1076    .text.ui_get_cursor  ui.o
+    0x08003c5a   0x08003c5a   0x00000002   PAD
+    0x08003c5c   0x08003c5c   0x0000000c   Code   RO         1080    .text.ui_get_page   ui.o
+    0x08003c68   0x08003c68   0x00000022   Code   RO         1074    .text.ui_set_cursor  ui.o
+    0x08003c8a   0x08003c8a   0x00000002   PAD
+    0x08003c8c   0x08003c8c   0x00000018   Code   RO         1078    .text.ui_set_page   ui.o
+    0x08003ca4   0x08003ca4   0x0000000e   Code   RO         1160    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08003cb2   0x08003cb2   0x00000002   Code   RO         1161    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08003cb4   0x08003cb4   0x0000000e   Code   RO         1162    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08003cc2   0x08003cc2   0x00000010   Data   RO         1016    .rodata.AHBPrescTable  system_stm32f4xx.o
+    0x08003cd2   0x08003cd2   0x00000008   Data   RO         1017    .rodata.APBPrescTable  system_stm32f4xx.o
+    0x08003cda   0x08003cda   0x0000005b   Data   RO         1115    .rodata.str1.1      modes.o
+    0x08003d35   0x08003d35   0x0000003a   Data   RO         1125    .rodata.str1.1      mode_help.o
+    0x08003d6f   0x08003d6f   0x00000001   PAD
+    0x08003d70   0x08003d70   0x00000020   Data   RO         1159    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08003c78, Size: 0x00000538, Max: 0x0001c000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08003d90, Size: 0x00000538, Max: 0x0001c000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08003c78   0x00000004   Data   RW         1015    .data.SystemCoreClock  system_stm32f4xx.o
-    0x20000004   0x08003c7c   0x00000001   Data   RW          848    .data.uwTickFreq    stm32f4xx_hal.o
-    0x20000005   0x08003c7d   0x00000003   PAD
-    0x20000008   0x08003c80   0x00000004   Data   RW          847    .data.uwTickPrio    stm32f4xx_hal.o
-    0x2000000c   0x08003c84   0x00000004   PAD
+    0x20000000   0x08003d90   0x00000004   Data   RW         1015    .data.SystemCoreClock  system_stm32f4xx.o
+    0x20000004   0x08003d94   0x00000001   Data   RW          848    .data.uwTickFreq    stm32f4xx_hal.o
+    0x20000005   0x08003d95   0x00000003   PAD
+    0x20000008   0x08003d98   0x00000004   Data   RW          847    .data.uwTickPrio    stm32f4xx_hal.o
+    0x2000000c   0x08003d9c   0x00000004   PAD
     0x20000010        -       0x00000048   Zero   RW           51    .bss.htim1          tim.o
     0x20000058        -       0x00000048   Zero   RW           53    .bss.htim10         tim.o
     0x200000a0        -       0x00000048   Zero   RW           52    .bss.htim6          tim.o
     0x200000e8        -       0x00000044   Zero   RW           67    .bss.huart4         usart.o
     0x2000012c        -       0x00000001   Zero   RW         1114    .bss.mode           modes.o
-    0x2000012d   0x08003c84   0x00000001   PAD
+    0x2000012d   0x08003d9c   0x00000001   PAD
     0x2000012e        -       0x00000002   Zero   RW         1064    .bss.status         status.o
     0x20000130        -       0x00000003   Zero   RW         1082    .bss.ui             ui.o
-    0x20000133   0x08003c84   0x00000001   PAD
+    0x20000133   0x08003d9c   0x00000001   PAD
     0x20000134        -       0x00000004   Zero   RW          849    .bss.uwTick         stm32f4xx_hal.o
     0x20000138        -       0x00000400   Zero   RW            1    STACK               startup_stm32f407xx.o
 
 
-    Execution Region RW_IRAM2 (Exec base: 0x2001c000, Load base: 0x08003c88, Size: 0x00000000, Max: 0x00004000, ABSOLUTE)
+    Execution Region RW_IRAM2 (Exec base: 0x2001c000, Load base: 0x08003da0, Size: 0x00000000, Max: 0x00004000, ABSOLUTE)
 
     **** No section assigned to this execution region ****
 
@@ -2532,7 +2546,8 @@ Image component sizes
        378          0          0          0          0       1698   keys.o
        692          0          0          0          0       2393   lcd.o
        414          0          0          0          0       6010   main.o
-      1364          0        120          0          1       2547   modes.o
+       566          0         58          0          0        808   mode_help.o
+      1054          0         91          0          1       2443   modes.o
         36          8        392          0       1024        836   startup_stm32f407xx.o
         50          0          0          0          2        800   status.o
        270          0          0          5          4       7104   stm32f4xx_hal.o
@@ -2551,9 +2566,9 @@ Image component sizes
        204          0          0          0         68       4795   usart.o
 
     ----------------------------------------------------------------------
-     14624         22        570         12       1324     139822   Object Totals
+     14880         22        598         12       1324     140526   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        92          0          2          3          6          0   (incl. Padding)
+        92          0          1          3          6          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -2594,15 +2609,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     14906         38        570         12       1324     139946   Grand Totals
-     14906         38        570         12       1324     139946   ELF Image Totals
-     14906         38        570         12          0          0   ROM Totals
+     15162         38        598         12       1324     140630   Grand Totals
+     15162         38        598         12       1324     140630   ELF Image Totals
+     15162         38        598         12          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                15476 (  15.11kB)
+    Total RO  Size (Code + RO Data)                15760 (  15.39kB)
     Total RW  Size (RW Data + ZI Data)              1336 (   1.30kB)
-    Total ROM Size (Code + RO Data + RW Data)      15488 (  15.12kB)
+    Total ROM Size (Code + RO Data + RW Data)      15772 (  15.40kB)
 
 ==============================================================================
 

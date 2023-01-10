@@ -5,6 +5,7 @@
 #include "gpio.h"
 #include "../Timer/timer.h"
 #include "../Ui/ui.h"
+#include "mode_help.h"
 
 static uint8_t mode;
 
@@ -26,7 +27,7 @@ uint8_t mode_get()
 
 void mode_choice_run()
 {
-	uint8_t choice = 0x10;	
+	uint8_t choice = 0x10;
 	lcd_clear();
 	lcd_set_cursor(0, 1);
 	lcd_write_string((uint8_t *)"Choose mode:", 12);
@@ -104,24 +105,8 @@ void mode_choice_run()
 void mode_help_run()
 {
 	ui_set_page(0);
-	ui_set_cursor(0, 0);
-	lcd_clear();
-	lcd_set_cursor(0, 0);
-	uint8_t symbol;
-	lcd_set_cursor(ui_get_cursor().y, ui_get_cursor().x);					
-	symbol = 0x3E;
-	lcd_write_string(&symbol, 1);
-	lcd_set_cursor(0, 1);
-	lcd_write_string((uint8_t *)"   HELP MENU", 12);
-	lcd_set_cursor(1, 1);
-	lcd_write_string((uint8_t *)"To move press  ", 15);
-	symbol = 0xD9;
-	lcd_set_cursor(1, 14);
-	lcd_write_string(&symbol, 1);
-	symbol = 0xDA;
-	lcd_write_string(&symbol, 1);
-	HAL_GPIO_WritePin(Debug_LED_GPIO_Port, Debug_LED_Pin, GPIO_PIN_SET);	
-	
+	ui_set_cursor(0, 0);	
+	mode_help_draw(ui_get_page());
 	while(Mode_Help)
 	{
 		if (status_get() == Status_Key_Up)
@@ -135,6 +120,7 @@ void mode_help_run()
 					ui_set_page(ui_get_page() - 1);
 					ui_set_cursor(0, 1);
 				}
+				mode_help_draw(ui_get_page());
 			}
 			else if(status_get() == Status_Key_Down)
 				{
@@ -147,33 +133,12 @@ void mode_help_run()
 						ui_set_page(ui_get_page() + 1);
 						ui_set_cursor(0, 0);
 					}
-				}
-					
-			switch(ui_get_page())
-			{
-				case(0):
-					lcd_set_cursor(ui_get_cursor().y, ui_get_cursor().x);					
-					symbol = 0x3E;
-					lcd_write_string(&symbol, 1);
-					lcd_set_cursor(0, 1);
-					lcd_write_string((uint8_t *)"   HELP MENU", 12);
-					lcd_set_cursor(1, 1);
-					lcd_write_string((uint8_t *)"To move press  ", 15);
-					symbol = 0xD9;
-					lcd_set_cursor(1, 14);
-					lcd_write_string(&symbol, 1);
-					symbol = 0xDA;
-					lcd_write_string(&symbol, 1);
-				break;
-				default:
-					ui_set_page(0);
-					ui_set_cursor(0,0);
-				break;
-			}	
+					mode_help_draw(ui_get_page());
+				}					
+
 		if (status_get() == (Status_Key_Mid))
 		{
 			mode_set(Mode_Choice);
-			status_set(0x0000);
 			break;
 		}
 	}
