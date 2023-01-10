@@ -117,7 +117,14 @@ void mode_help_run()
 				}
 			else if (ui_get_cursor().y == 0)
 				{
-					ui_set_page(ui_get_page() - 1);
+					if (ui_get_page() - 1 < 0)
+						{
+							ui_set_page(2);
+						}
+						else
+							{
+								ui_set_page(ui_get_page() - 1);
+							}
 					ui_set_cursor(0, 1);
 				}
 				mode_help_draw(ui_get_page());
@@ -130,7 +137,14 @@ void mode_help_run()
 					}
 					else if (ui_get_cursor().y == 1)
 					{
-						ui_set_page(ui_get_page() + 1);
+						if (ui_get_page() + 1 > 2)
+						{
+							ui_set_page(0);
+						}
+						else
+							{
+								ui_set_page(ui_get_page() + 1);
+							}
 						ui_set_cursor(0, 0);
 					}
 					mode_help_draw(ui_get_page());
