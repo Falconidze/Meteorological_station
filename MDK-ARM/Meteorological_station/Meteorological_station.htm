@@ -3,11 +3,11 @@
 <title>Static Call Graph - [Meteorological_station\Meteorological_station.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image Meteorological_station\Meteorological_station.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6180002: Last Updated: Tue Jan 10 18:10:23 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6180002: Last Updated: Tue Jan 10 19:13:42 2023
 <BR><P>
-<H3>Maximum Stack Usage =        240 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        208 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-main &rArr; mode_help_run &rArr; mode_help_draw &rArr; lcd_write_string &rArr; lcd_write_data &rArr; lcd_clock &rArr; HAL_GPIO_WritePin
+main &rArr; MX_TIM1_Init &rArr; HAL_TIM_PWM_Init &rArr; HAL_TIM_PWM_MspInit &rArr; HAL_NVIC_SetPriority &rArr; NVIC_EncodePriority
 <P>
 <H3>
 Mutually Recursive functions
@@ -1003,7 +1003,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[5b]"></a>main</STRONG> (Thumb, 184 bytes, Stack size 16 bytes, main.o(.text.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = main &rArr; mode_help_run &rArr; mode_help_draw &rArr; lcd_write_string &rArr; lcd_write_data &rArr; lcd_clock &rArr; HAL_GPIO_WritePin
+<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = main &rArr; MX_TIM1_Init &rArr; HAL_TIM_PWM_Init &rArr; HAL_TIM_PWM_MspInit &rArr; HAL_NVIC_SetPriority &rArr; NVIC_EncodePriority
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_saved_data_run
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_current_data_run
@@ -1058,13 +1058,11 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[bf]"></a>mode_help_draw</STRONG> (Thumb, 730 bytes, Stack size 120 bytes, mode_help.o(.text.mode_help_draw))
-<BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = mode_help_draw &rArr; lcd_write_string &rArr; lcd_write_data &rArr; lcd_clock &rArr; HAL_GPIO_WritePin
+<P><STRONG><a name="[bf]"></a>mode_help_draw</STRONG> (Thumb, 430 bytes, Stack size 80 bytes, mode_help.o(.text.mode_help_draw))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = mode_help_draw &rArr; lcd_write_string &rArr; lcd_write_data &rArr; lcd_clock &rArr; HAL_GPIO_WritePin
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ui_get_page
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ui_set_page
 <LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ui_get_cursor
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ui_set_cursor
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_string
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_set_cursor
@@ -1073,7 +1071,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[ba]"></a>mode_help_run</STRONG> (Thumb, 278 bytes, Stack size 32 bytes, modes.o(.text.mode_help_run))
-<BR><BR>[Stack]<UL><LI>Max Depth = 224<LI>Call Chain = mode_help_run &rArr; mode_help_draw &rArr; lcd_write_string &rArr; lcd_write_data &rArr; lcd_clock &rArr; HAL_GPIO_WritePin
+<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = mode_help_run &rArr; mode_help_draw &rArr; lcd_write_string &rArr; lcd_write_data &rArr; lcd_clock &rArr; HAL_GPIO_WritePin
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_help_draw
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_set
@@ -1180,7 +1178,6 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_settings_run
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_help_run
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_help_draw
 </UL>
 
 <P><STRONG><a name="[c2]"></a>ui_set_page</STRONG> (Thumb, 24 bytes, Stack size 4 bytes, ui.o(.text.ui_set_page))
@@ -1188,7 +1185,6 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_settings_run
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_help_run
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_help_draw
 </UL>
 
 <P><STRONG><a name="[d0]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
