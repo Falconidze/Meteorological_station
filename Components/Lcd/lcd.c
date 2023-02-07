@@ -10,6 +10,7 @@ void lcd_create_symbol(uint8_t byte, uint8_t data);
 
 void lcd_init(void)
 {
+	timer_delay_us(100);
   /* Start init LCD controler */
   lcd_write_port(0x00);
   HAL_Delay(60);
@@ -68,7 +69,7 @@ void lcd_write_string(uint8_t * str, uint8_t size)
 {
   uint8_t index = 0;
   for (index = 0; index < size; index ++)
-  {		
+  {
     lcd_write_data(str[index]);
   }
 }

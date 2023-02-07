@@ -12,7 +12,7 @@ void status_init()
 
 void status_set(uint16_t data)
 {	
-	status = data;	
+	status = data;
 }
 
 uint16_t status_get(void)

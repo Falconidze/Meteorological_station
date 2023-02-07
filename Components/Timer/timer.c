@@ -19,3 +19,29 @@ void timer_delay_us(uint16_t time)
 #endif /* timer */
 }
 
+void timer_spy_stop()
+{
+	TIM10->CR1 &= 0x00;
+}
+
+void timer_spy_reset()
+{
+	TIM10->CNT &= 0x00;
+}
+
+void timer_spy_run()
+{
+	TIM10->CR1 |= 0x01;
+}
+
+void timer_spy_init()
+{
+	HAL_TIM_Base_Start_IT(&htim10);	
+	timer_spy_stop();
+}
+
+void timer_dht_init()
+{
+	HAL_TIM_Base_Start_IT(&htim7);
+	timer_spy_stop();
+}

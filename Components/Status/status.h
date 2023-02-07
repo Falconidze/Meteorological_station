@@ -7,6 +7,7 @@
 #define Status_Key_Right 0x0008
 #define Status_Key_Mid 0x0010
 #define Status_Key_Mid_Long 0x0020
+//#define Status_Write_Data 0x0100
 
 #include "stdint.h"
 void status_init(void);

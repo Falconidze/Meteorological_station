@@ -30,6 +30,8 @@
 "meteorological_station\keys.o"
 "meteorological_station\modes.o"
 "meteorological_station\mode_help.o"
+"meteorological_station\mode_settings.o"
+"meteorological_station\dht11.o"
 --library_type=microlib --strict --scatter "Meteorological_station\Meteorological_station.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

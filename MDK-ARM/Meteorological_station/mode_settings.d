@@ -1,4 +1,10 @@
-meteorological_station/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
+meteorological_station/mode_settings.o: \
+  ..\Components\Modes\mode_settings.c \
+  ..\Components\Modes\mode_settings.h \
+  ..\Components\Modes\..\Status\status.h \
+  F:\Keil\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\Components\Modes\..\Ui\ui.h ..\Components\Modes\..\Lcd\lcd.h \
+  ..\Core\Inc\tim.h ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Core\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
@@ -6,7 +12,6 @@ meteorological_station/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h \
   ..\Drivers\CMSIS\Include\core_cm4.h \
-  F:\Keil\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\Drivers\CMSIS\Include\cmsis_version.h \
   ..\Drivers\CMSIS\Include\cmsis_compiler.h \
   ..\Drivers\CMSIS\Include\cmsis_armclang.h \
@@ -31,11 +36,5 @@ meteorological_station/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  ..\Core\Inc\tim.h ..\Core\Inc\usart.h ..\Core\Inc\gpio.h \
-  ..\Core\Src\..\..\Components\Lcd\lcd.h \
-  ..\Core\Src\..\..\Components\Status\status.h \
-  ..\Core\Src\..\..\Components\Timer\timer.h \
-  ..\Core\Src\..\..\Components\Modes\modes.h \
-  ..\Core\Src\..\..\Components\Modes\..\Status\status.h \
-  ..\Core\Src\..\..\Components\Modes\..\Ui\ui.h \
-  ..\Core\Src\..\..\Components\DHT11\DHT11.h
+  F:\Keil\ARM\ARMCLANG\Bin\..\include\string.h \
+  F:\Keil\ARM\ARMCLANG\Bin\..\include\stdio.h

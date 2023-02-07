@@ -34,4 +34,8 @@ meteorological_station/modes.o: ..\Components\Modes\modes.c \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  ..\Components\Modes\..\Timer\timer.h ..\Components\Modes\mode_help.h
+  ..\Components\Modes\..\Timer\timer.h ..\Core\Inc\tim.h \
+  ..\Components\Modes\mode_help.h ..\Components\Modes\..\DHT11\DHT11.h \
+  F:\Keil\ARM\ARMCLANG\Bin\..\include\string.h \
+  F:\Keil\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  ..\Components\Modes\mode_settings.h

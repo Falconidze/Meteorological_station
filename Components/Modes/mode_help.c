@@ -6,11 +6,9 @@
 void mode_help_draw(uint8_t page)
 {
 	uint8_t symbol; 
-	uint8_t page_check;
 	switch(ui_get_page())
 		{
 		case 0:
-			page_check = 0;
 			lcd_clear();	
 			lcd_set_cursor(ui_get_cursor().y, ui_get_cursor().x);					
 			symbol = 0x3E;
@@ -40,16 +38,23 @@ void mode_help_draw(uint8_t page)
 			lcd_write_string(&symbol, 1);
 			lcd_write_string((uint8_t *)" Mode select", 12);
 			break;
+		
 		case 2:
-			page_check = 2;
 			lcd_clear();
 			lcd_set_cursor(ui_get_cursor().y, ui_get_cursor().x);
 			symbol = 0x3E;
 			lcd_write_string(&symbol, 1);
 			lcd_set_cursor(0, 1);
-			lcd_write_string((uint8_t *)"To select mode", 14);
+			lcd_write_string((uint8_t *)"To confirm", 10);
 			lcd_set_cursor(1, 1);
 			lcd_write_string((uint8_t *) "Press mid key", 13);
-			break;				
+			break;
+		
+		case 3:
+		 lcd_clear(); 
+		 lcd_set_cursor(ui_get_cursor().y, ui_get_cursor().x);     
+		 symbol = 0x3E;
+		 lcd_write_string(&symbol, 1);
+		 break;
 		}
 }

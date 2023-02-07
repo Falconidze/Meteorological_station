@@ -1,4 +1,4 @@
-meteorological_station/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
+meteorological_station/dht11.o: ..\Components\DHT11\DHT11.c \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Core\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
@@ -31,11 +31,5 @@ meteorological_station/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  ..\Core\Inc\tim.h ..\Core\Inc\usart.h ..\Core\Inc\gpio.h \
-  ..\Core\Src\..\..\Components\Lcd\lcd.h \
-  ..\Core\Src\..\..\Components\Status\status.h \
-  ..\Core\Src\..\..\Components\Timer\timer.h \
-  ..\Core\Src\..\..\Components\Modes\modes.h \
-  ..\Core\Src\..\..\Components\Modes\..\Status\status.h \
-  ..\Core\Src\..\..\Components\Modes\..\Ui\ui.h \
-  ..\Core\Src\..\..\Components\DHT11\DHT11.h
+  ..\Core\Inc\gpio.h ..\Core\Inc\main.h \
+  ..\Components\DHT11\..\Timer\timer.h ..\Components\DHT11\DHT11.h

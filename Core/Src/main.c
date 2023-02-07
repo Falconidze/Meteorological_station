@@ -28,7 +28,7 @@
 #include "../../Components/Status/status.h"
 #include "../../Components/Timer/timer.h"
 #include "../../Components/Modes/modes.h"
-
+#include "../../Components/DHT11/DHT11.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -94,6 +94,7 @@ int main(void)
   MX_TIM6_Init();
   MX_TIM1_Init();
   MX_TIM10_Init();
+  MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
 	
   /* USER CODE END 2 */
@@ -101,11 +102,16 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	lcd_init();
+
 	mode_init();
 	status_init();
-	HAL_TIM_Base_Start_IT(&htim10);
-	Timer10_Stop;
+//  HAL_TIM_Base_Start_IT(&htim7);
+	dht_init();
+	timer_spy_init();
+	HAL_TIM_Base_Start(&htim1);
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 	HAL_GPIO_WritePin(Debug_LED_GPIO_Port, Debug_LED_Pin, GPIO_PIN_RESET);
+//	dht_check_sensor();
   while (1)
   {
 			if (mode_get() == Mode_Choice)
@@ -182,9 +188,13 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
 {
 	if (htim == &htim10)
 	{
-		Timer10_Stop;
-		Timer10_Reset;
-		status_set(0x0000);		
+		timer_spy_stop();
+		timer_spy_reset();
+		status_set(0x0000);
+	}
+	if (htim == &htim7)
+	{
+		dht_check_sensor();
 	}
 }
 

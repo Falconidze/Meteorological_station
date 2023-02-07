@@ -3,10 +3,12 @@
 
 #include "stdint.h"
 
-#define Timer10_Stop TIM10->CR1 &= 0x00
-#define Timer10_Reset TIM10->CNT &= 0x00
-#define Timer10_Start TIM10->CR1 |= 0x01
-
 void timer_delay_us(uint16_t time);
 
+void timer_spy_run();
+void timer_spy_reset();
+void timer_spy_stop();
+void timer_spy_init();
+
+void timer_dht_init();
 #endif /* LCD_H */

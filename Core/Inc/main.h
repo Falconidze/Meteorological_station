@@ -61,6 +61,8 @@ void Error_Handler(void);
 #define FL_SCK_GPIO_Port GPIOA
 #define DISP_RS_Pin GPIO_PIN_7
 #define DISP_RS_GPIO_Port GPIOE
+#define DISP_Brightness_PWM_Pin GPIO_PIN_9
+#define DISP_Brightness_PWM_GPIO_Port GPIOE
 #define DISP_RW_Pin GPIO_PIN_10
 #define DISP_RW_GPIO_Port GPIOE
 #define DISP_ENA_Pin GPIO_PIN_11
